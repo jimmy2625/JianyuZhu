@@ -1,11 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-    font-family: 'Roboto', sans-serif;
-=======
     font-family: 'Open Sans', sans-serif;
->>>>>>> 5c7e18c (new language)
 }
 
 .navbarScroll.navbarDark {
@@ -17,10 +13,6 @@ body {
     transition: background-color 0.3s ease;
 }
 
-<<<<<<< HEAD
-.navbar-container {
-    margin-left: 68%;
-=======
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -34,7 +26,6 @@ body {
 .container {
     margin-left: 15%;
     margin-right: 15%;
->>>>>>> 5c7e18c (new language)
 }
 
 .hero-header {
@@ -66,26 +57,16 @@ body {
 .half-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-<<<<<<< HEAD
-    margin-left: 20%;
-    margin-right: 20%;
-=======
     margin-left: 15%;
     margin-right: 15%;
->>>>>>> 5c7e18c (new language)
     padding-bottom: 100px;
 }
 
 .services-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-<<<<<<< HEAD
-    margin-left: 20%;
-    margin-right: 20%;
-=======
     margin-left: 15%;
     margin-right: 15%;
->>>>>>> 5c7e18c (new language)
 }
 
 .service-card {
@@ -187,25 +168,15 @@ p {
     .services-container {
         display: flex;
         flex-direction: column;
-<<<<<<< HEAD
-        margin-left: 5%;
-        margin-right: 5%;
-=======
         margin-left: 15%;
         margin-right: 15%;
->>>>>>> 5c7e18c (new language)
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1500px) {
     .services-container {
         grid-template-columns: repeat(2, 1fr);
-<<<<<<< HEAD
-        margin-left: 5%;
-        margin-right: 5%;
-=======
         margin-left: 15%;
         margin-right: 15%;
->>>>>>> 5c7e18c (new language)
     }
 }
