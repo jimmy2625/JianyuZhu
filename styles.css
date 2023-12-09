@@ -88,6 +88,10 @@ body {
     overflow: auto; 
 }
 
+.service-card p {
+    margin-bottom: 0;
+}
+
 .map {
     padding-right: 32px;
     height: 400px;
