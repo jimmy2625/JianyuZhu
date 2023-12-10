@@ -16,16 +16,16 @@ body {
 .navbar-brand {
     display: flex;
     align-items: center;
+    margin-left: 100px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    margin-right: 100px;
 }
 
 .flag-img {
     max-width: 25px;
-    margin-right: 10px;
-}
-
-.container {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-right: 5px;
 }
 
 .hero-header {
@@ -43,15 +43,12 @@ body {
 .section-header {
     color: #000;
     text-align: center;
-    margin-top: 120px;
 }
 
 .about-container {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    padding-top: 150px;
     margin-left: 20%;
     margin-right: 20%;
-    padding-bottom: 100px;
 }
 
 .contact-container {
@@ -72,22 +69,12 @@ body {
 .service-card {
     margin: 15px;
     border: 1px solid #ccc; 
-    height: fit;
     display: flex;
     flex-direction: column;
 }
 
 .service-card img {
     width: 100%;
-    height: 45%;
-}
-
-.service-card div.text {
-    overflow: auto; 
-}
-
-.service-card p {
-    margin-bottom: 0;
 }
 
 .map {
@@ -99,15 +86,23 @@ body {
     list-style-type: none;
 }
 
-.list-item {
-    line-height: 4;
-    color: #aaa;
+.contact-text {
+    font: 300 20px 'Roboto', sans-serif;
+    letter-spacing: 1.9px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.contact-text {
-    font: 300 18px 'Roboto', sans-serif;
-    letter-spacing: 1.9px;
-    color: #bbb;
+.list-item {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.list-item i {
+    display: flex;
+    align-items: center;
 }
 
 .company {
@@ -127,22 +122,22 @@ body {
 }
 
 .contact-text a {
-    color: #bbb;
+    color: #000;
     text-decoration: none;
 }
 
 .contact-text a:hover {
-    color: #000;
+    color: #bbb;
 }
 
 h1 {
-    font-size: 5em;
-    margin: 0;
+    font-size: 3em;
+    padding: 10px;
 }
 
 h2 {
     padding-top: 70px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     font-size: 2em;
 }
 
@@ -150,27 +145,26 @@ h3 {
     padding: 15px;
     margin-bottom: 0;
     font-size: 1.5em;
-    height: 87px;
 }
 
 h4 {
-    padding: 15px;
-    margin-bottom: 0;
-    font-size: 1.5em;
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+    font-size: 1em;
 }
 
 p {
     font-size: 1em;
-    padding: 15px;
-    padding-top: 0;
+    padding: 20px;
 }
 
 .social-icons {
-    padding: 15px;
+    padding-top: 15px;
     font-size: 36px;
 }
 
-.fa-facebook:hover,.fa-instagram:hover,.fa-linkedin:hover {
+.fa-facebook:hover {
     color: #008000;
 }
 
@@ -184,24 +178,27 @@ p {
     text-align: center;
 }
 
+.text-container {
+    width: 70%;
+    padding-bottom: 100px;
+}
+
+.text-container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 50px;
+}
+
+.text-container h2 {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
 @media screen and (max-width: 768px) {
-    .container {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
 
     .about-container {
-        grid-template-columns: 1fr;
         margin-left: 5%;
         margin-right: 5%;
-    }
-
-    .about-container img {
-        width: 70%;
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-        padding-bottom: 20px;
     }
 
     .services-container {
@@ -218,6 +215,10 @@ p {
         flex-direction: column;
     }
 
+    .navbar-brand {
+        margin: 0;
+    }
+
     ul {
         padding-left: 0px;
     }
@@ -227,33 +228,14 @@ p {
         padding-right: 0px;
         height: 300px;
     }
-
-    h1 {
-        font-size: 3em;
-        margin: 0;
-    }
-    
-    h2 {
-        padding-top: 70px;
-        padding-bottom: 40px;
-        font-size: 1.5em;
-    }
-    
-    h3 {
-        padding: 15px;
-        margin-bottom: 0;
-        font-size: 1.5em;
-        height: 87px;
-    }
-
-    h4 {
-        padding: 15px;
-        margin-bottom: 0;
-        font-size: 1em;
-    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1300px) {
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .services-container {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 10%;
